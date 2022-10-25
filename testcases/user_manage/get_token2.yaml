@@ -1,0 +1,24 @@
+# 一般用- 开始 一个yaml文件可能有多个测试用例, 下面例子 描述一个简单的接口测试用例
+# get url, token后面的?跟参数 比如有3个  http://xxxx/token？grant_type=a&appid=v&sectet=a
+
+-
+  name: 获取统一接口鉴权码
+  request:
+    method: get
+    url: http://xxxx/token
+    data:
+      grant_type: a
+      appid: v
+      secret: a
+  validate: None
+
+-
+  name: 获取统一接口鉴权码2
+  request:
+    method: get
+    url: http://xxxx/token
+    data:
+      grant_type: aa
+      appid: vv
+      secret: aa
+  validate: None

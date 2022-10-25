@@ -1,0 +1,15 @@
+# name: 百里
+
+#msjy:
+#  - name1: shaowenhao
+#  - name2: duxiaodan
+#  - name3: shaojunheng
+
+# {'msjy': [{'name1': 'shaowenhao'}, {'name2': 'duxiaodan'}, {'name3': 'shaojunheng'}]}
+
+msjy:
+  - name1: shaowenhao
+  - name2:
+      - age1: 18
+      - age2: 19
+  - name3: shaojunheng

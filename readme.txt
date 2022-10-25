@@ -89,7 +89,7 @@ markers =
 继承后可以稍微灵活些，但是对希望部分前后置的没办法解决
 
 六、使用Fixture实现部分前后置
-@pytest.fixture()
+@pytest.fixture(scope=None,autouser=False,params=None,ids=None,name=None)
 1. scope：作用域
     function:在函数之前和之后执行  yield后面的语句表示之后执行
     1. 手动调用的方式是在测试用例的参数里加入fixture的名称
@@ -132,5 +132,97 @@ markers =
  print("test  multi fixtures " + um + db) 向这条语句 其实调了2个fixture
 
  八、 这些设置的优先级是怎么样？
- 
+ setup,teardown,setup_class,teardown_class,fixture,conftest优先级
+会话：fixture的session级别优先级最高
+
+类：fixture的class界别优先级高
+类：setup_class
+
+函数：fixture的function级别优先级高
+函数: setup
+
+九、总结：pytest执行过程
+1. 查询当前目录下的conftest.py文件
+2.查询当前目录下的pytest.ini文件。找到测试用例的位置
+3. 查询用例目录下的conftest.py文件
+4. 查询测试用例的py文件中是否有setup,teardown,setup_class,teardown_class
+5. 根据ptytest.ini文件的测试用例的规则去查找用例并执行
+
+
+
+十、pytest的断言
+就是使用python自己的断言 assert
+
+assert 1 == 1
+assert 'a' in 'abc'
+
+flag = True
+assert flag is True
+
+十一、结合allure-pytest生成报告
+1. 安装allure-pytest插件
+下载的allure zip包配置Path，和pytest存在版本的兼容问题
+
+生成allure报告
+1.生成临时的jason报告，再pytest.ini文件里面加入以下内容：
+addopts = -vs --alluredir=./temp --clean-alluredir （清空临时报告）
+
+======================== 13 passed, 2 skipped in 3.07s ========================
+Report successfully generated to .\reports
+
+
+十二、Pytest之parametrize()实现数据驱动 侧重点
+方法：
+@pytest.mark.parametrize(args_name,args_value)
+args_name:参数名称，用于将参数值传给函数
+args_value:参数值 (列表和字典列表，元组和字典元组)
+有N个值，用例就会执行N次
+
+第一种用法：
+    @pytest.mark.parametrize('caseinfo',['python','java','c#'])
+    def test_get_token(self,caseinfo):
+        print("获取统一接口鉴权码" + caseinfo)
+
+
+第二种方法：
+     @pytest.mark.parametrize('arg1,arg2',[['name','shaowenhao'],['age','18']])
+     def test_get_token(self,arg1,arg2):
+        print("获取统一接口鉴权码" + str(arg1) +str(arg2))
+
+
+
+十三、YAML格式测试用例 读写 封装  查阅yaml_util.py
+1. yam扩展名可以试yaml yml 支持#注释，通过缩进表示层级，区分大小写
+yaml读取出来之后是一个字典列表格式
+用途：
+用于配置文件
+用于编写自动化测试用
+
+2.数据组成
+1.map对象，键(空格)值
+name: 百里
+
+2.数组list使用-表示列表
+msjy:
+  - name1: shaowenhao
+  - name2:
+      - age1: 18
+      - age2: 19
+  - name3: shaojunheng
+
+{'msjy': [{'name1': 'shaowenhao'}, {'name2': [{'age1': 18}, {'age2': 19}]}, {'name3': 'shaojunheng'}]}
+
+
+十四、parametrize和yaml实现接口自动化 参考test_paramtrize_yaml.py
+
+write_yaml方法类似 用的 yaml.dump() 有中文的时候粗腰参数 allow_unicode=True
+
+接口自动化测试框架封装
+1. 接口测试关联
+2. yaml文件实现动态参数的处理
+3. yaml实现文件上传
+4. yaml解决断言，特别是有参数化的时候
+5. yaml文件数据量大怎么办
+6. 接口自动化框架 扩展，加密接口...
+
 

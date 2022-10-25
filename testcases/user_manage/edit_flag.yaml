@@ -1,0 +1,8 @@
+# 该用例需要get_token2中的返回值里的token
+-
+  name: 编辑标签接口
+  request:
+    method: post
+    url: http://xxxx/access_token=
+    data:{"tag":{"id":1234,"name":"demo"}}
+  validate: None

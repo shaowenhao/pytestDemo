@@ -5,7 +5,7 @@
 import pytest
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture(scope="function", autouse=False)
 def exe_database_sql():
     print("execute sql")
     return "siemens ssp"

@@ -1,0 +1,260 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "md2t20bc",
+    "children" : [ {
+      "name" : "5252-MainThread",
+      "children" : [ {
+        "name" : "test_get_token[arg1]",
+        "uid" : "4f5712dae7eb0f4b",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157359,
+          "stop" : 1666590157359,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "['age', '18']" ]
+      }, {
+        "name" : "test_print3",
+        "uid" : "9212ef3a3eec8488",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1666590160387,
+          "stop" : 1666590160387,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_get_token[caseinfo0]",
+        "uid" : "37a5a3d749f07a08",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157363,
+          "stop" : 1666590157363,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '获取统一接口鉴权码', 'request': {'method': 'get', 'url': 'http://xxxx/token', 'data': {'grant_type': 'a', 'appid': 'v', 'secret': 'a'}}, 'validate': 'None'}" ]
+      }, {
+        "name" : "test_swh_api[shaowenhao]",
+        "uid" : "48ecb784d7f6a816",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157348,
+          "stop" : 1666590157348,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'shaowenhao'" ]
+      }, {
+        "name" : "test_swh4",
+        "uid" : "4feb27b27673846",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157335,
+          "stop" : 1666590157335,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_swh5",
+        "uid" : "7cb7ad31c6adef1c",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157336,
+          "stop" : 1666590157336,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_swh_params[shaowenhao]",
+        "uid" : "ac7ffb499696aeb1",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157340,
+          "stop" : 1666590157340,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'shaowenhao'" ]
+      }, {
+        "name" : "test_get_token[caseinfo1]",
+        "uid" : "f508d9028974cf47",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157366,
+          "stop" : 1666590157366,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '获取统一接口鉴权码2', 'request': {'method': 'get', 'url': 'http://xxxx/token', 'data': {'grant_type': 'aa', 'appid': 'vv', 'secret': 'aa'}}, 'validate': 'None'}" ]
+      }, {
+        "name" : "test_get_token[arg0]",
+        "uid" : "55e1a3caf13adbda",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157356,
+          "stop" : 1666590157356,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "['name', 'shaowenhao']" ]
+      }, {
+        "name" : "test_swh_params[duxiaodan]",
+        "uid" : "84519631bb1b82c5",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157343,
+          "stop" : 1666590157343,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'duxiaodan'" ]
+      }, {
+        "name" : "test_swh3",
+        "uid" : "a66235b2e00fa541",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157333,
+          "stop" : 1666590157333,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_swh",
+        "uid" : "b1ed28a1e422deb4",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157329,
+          "stop" : 1666590157329,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_print1",
+        "uid" : "fad19cdebae5c282",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157370,
+          "stop" : 1666590160380,
+          "duration" : 3010
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_swh_params[shaojunheng]",
+        "uid" : "c4f4974c72023ab9",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157345,
+          "stop" : 1666590157346,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'shaojunheng'" ]
+      }, {
+        "name" : "test_swh2",
+        "uid" : "454f4de5d0be6628",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157331,
+          "stop" : 1666590157331,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_swh_api[duxiaodan]",
+        "uid" : "d3dff5bbb8704a78",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157350,
+          "stop" : 1666590157350,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'duxiaodan'" ]
+      }, {
+        "name" : "test_print2",
+        "uid" : "3afad29405990c2d",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1666590160386,
+          "stop" : 1666590160386,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_swh6",
+        "uid" : "f38737c08df8fba",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157338,
+          "stop" : 1666590157338,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_swh_api[shaojunheng]",
+        "uid" : "c8689babc8ba518a",
+        "parentUid" : "97f5f30f0d970b8fd0b81cec5ec412ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1666590157353,
+          "stop" : 1666590157353,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'shaojunheng'" ]
+      } ],
+      "uid" : "97f5f30f0d970b8fd0b81cec5ec412ca"
+    } ],
+    "uid" : "bfdab083a514349af1a9f45926a87d72"
+  } ]
+}

@@ -1,0 +1,91 @@
+{
+  "uid" : "3afad29405990c2d",
+  "name" : "test_print2",
+  "fullName" : "testcases.test_print.TestPrint#test_print2",
+  "historyId" : "f69da002c0793600aa130d79595d3af8",
+  "time" : {
+    "start" : 1666590160386,
+    "stop" : 1666590160386,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: no reason skip",
+  "statusTrace" : "('D:\\\\PycharmProjects\\\\pytestDemo\\\\testcases\\\\test_print.py', 25, 'Skipped: no reason skip')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestPrint",
+    "time" : {
+      "start" : 1666590157369,
+      "stop" : 1666590157369,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_xunit_setup_class_fixture_TestPrint::0",
+    "time" : {
+      "start" : 1666590160388,
+      "stop" : 1666590160388,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.skip(reason='no reason skip')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_print"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPrint"
+  }, {
+    "name" : "host",
+    "value" : "md2t20bc"
+  }, {
+    "name" : "thread",
+    "value" : "5252-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_print"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.skip(reason='no reason skip')" ]
+  },
+  "source" : "3afad29405990c2d.json",
+  "parameterValues" : [ ]
+}
